@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 provider "vault" {
-  address = "<>:8200"
+  address = "http://<public ip address of your ec2 instance>:8200"
   skip_child_token = true
 
   auth_login {
